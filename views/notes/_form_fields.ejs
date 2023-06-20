@@ -1,19 +1,22 @@
 <!-- note title -->
 <div class="form-group">
     <label class="h4" for="title">Title</label>
-    <input required value="<%= note.title %>" type="text" name="title" id="title" class="form-control shadow-lg  mb-2 bg-body rounded">
+    <input required value="<%= note.title %>" type="text" name="title" id="title"
+        class="form-control shadow-lg  mb-2 rounded text-white bg-transparent">
 </div>
 <!-- note description -->
 <div class="form-group mt-4">
     <label class="h4" for="description">Description</label>
-    <textarea required type="text" name="description" id="description" rows="10" class="form-control shadow-lg  mb-2 bg-body rounded">
+    <textarea required type="text" name="description" id="description" rows="10"
+        class="form-control shadow-lg  mb-2 rounded text-white bg-transparent">
         <%= note.description %>
     </textarea>
 </div>
 
 <div class="form-group mt-4">
     <label class="h4" for="markdown">Markdown</label>
-    <textarea required type="text" name="markdown" id="markdown" rows="7" class="form-control shadow-lg  bg-body rounded">
+    <textarea required type="text" name="markdown" id="markdown" rows="1"
+        class="form-control shadow-lg  rounded text-white bg-transparent">
         <%= note.markdown %>
     </textarea>
 </div>
